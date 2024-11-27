@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "199448508979",
+    "firebase_url": "https://dc-practica1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dc-practica1",
+    "storage_bucket": "dc-practica1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199448508979:android:0c798600a7732dedfc4146",
+        "android_client_info": {
+          "package_name": "com.example.sisifo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAHywvhJICQ2pCeoZzGp7yX6Jhq90Vfm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199448508979:android:7c054133ae9b3fe7fc4146",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAHywvhJICQ2pCeoZzGp7yX6Jhq90Vfm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

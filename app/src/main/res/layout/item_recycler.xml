@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imagenFila"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/comida_ph"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1"
+        android:layout_marginStart="6dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenFila"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        >
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <TextView
+            android:id="@+id/tituloFila"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="left"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="TITULO"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tituloFila"
+            >
+
+            <TextView
+                android:id="@+id/valoracionCelda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+
+                android:text="4.4"
+                />
+
+            <TextView
+                android:id="@+id/dificultadCelda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Medium"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+            >
+
+            <TextView
+                android:id="@+id/caloriasCelda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+
+                android:text="150"
+                />
+
+            <TextView
+                android:id="@+id/racionesCelda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="33"
+                />
+
+
+
+        </LinearLayout>
+
+        <!-- Se desmonta al usarlo
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="0.7"
+            android:columnCount="2"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/valoracionCelda"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="left"
+                android:text="Valoración⭐: 4.4" />
+
+            <TextView
+                android:id="@+id/dificultadCelda"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="left"
+                android:text="Dificultad: Medium" />
+
+            <TextView
+                android:id="@+id/racionesCelda"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="left"
+                android:text="Raciones: 33" />
+
+            <TextView
+                android:id="@+id/caloriasCelda"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="left"
+                android:text="kcal/ración: 150" />
+
+        </GridLayout>
+
+        -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
